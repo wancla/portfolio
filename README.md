@@ -7,7 +7,7 @@ O controle das tarefas será feito pelo Github.
 ## Icones
 :package: - Nova funcionalidade
 :up: - Atualização
-:beatle: - Correção de bug
+:beetle: - Correção de bug
 :checkered_flag: - release
 
 ## Sites utilizados
