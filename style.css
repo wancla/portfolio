@@ -199,8 +199,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.menu-item {
-    text-align: center;
+.menu-item {    
     margin-bottom: .5rem;
 }
 .menu-link {
@@ -288,9 +287,14 @@ header {
     font-size: 3rem;
     color: #555;
     border-bottom: solid 3px var(--primary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem ;
 
 }
+.sessao-header h1:hover {
+    color: var(--primary);
+    transition: 1s;
+}
+
 .conhecimento-header {
     display: flex;
     align-items: center;
@@ -299,11 +303,19 @@ header {
     font-size: 2.5rem;
     color: #555;
 }
+.conhecimento-header i:hover {
+    color: var(--primary);
+    transition: 1s;
+}
 .conhecimento-header h3 {
     font-family: var(--font-secondary);
     font-size: 2rem;
     padding-left: 1rem;
     color:#555;
+}
+.conhecimento-header h3:hover{
+    color: var(--primary);
+    transition: 1s;
 }
 .conhecimento-texto {
     font-family: var(--font-secondary);
@@ -317,4 +329,85 @@ header {
 .conhecimentos-img-wrapper img {
     object-fit: cover;
     width: 100%;
+}
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    width: 18rem;
+    height: 25rem;
+    position: relative;
+}
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    border-radius: .5rem;
+}
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    border-radius: .5rem;
+    transition: opacity .3s;
+}
+.card:hover .card-img-wrapper img {
+    opacity: .5rem;
+    
+}
+.card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ;
+}
+
+.card-info h2 {
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 500;
+    color: #eee;
+}
+.card-info h3 {
+    font-family: var(--font-action);
+    font-weight: bolder;
+    color: #ff4081;
+    margin-bottom: 1.5rem;
+}
+.card-info p {
+    font-family: var(--font-secondary);
+    color: #eee;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.card-info button {
+    
+    width: 8rem;
+    height: 2.5rem;
+    background: #7F00FF;  
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
+    background: linear-gradient(to left, #E100FF, #7F00FF); 
+    font-family: var(--font-action);
+    font-size: 0.7rem;
+    color: #eee;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.card-info button:hover {
+    background: var(--primary);
+    
+}
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+    
 }
