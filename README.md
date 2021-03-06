@@ -8,7 +8,7 @@ O controle das tarefas será feito pelo Github.
 :package: - Nova funcionalidade
 :up: - Atualização
 :beatle: - Correção de bug
-:checkered: - release
+:checkered_flag: - release
 
 ## Sites utilizados
 
